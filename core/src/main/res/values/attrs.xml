@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DownLoadProgressbar">
+        <attr name="progressHeight" format="dimension" />
+        <attr name="progressHeightBound" format="dimension" />
+        <attr name="progressValue" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="StoriesHeaderView">
+        <attr name="size" format="integer" />
+        <attr name="colorBackGround" format="color" />
+        <attr name="colorSelect" format="color" />
+        <attr name="tabHeight" format="dimension" />
+        <attr name="tabSelect" format="integer" />
+        <attr name="paddingRow" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedHorizontalProgress">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="isRounded" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/download_info_item_rl">
+
+    <include
+        android:id="@+id/download_info_include_layout"
+        layout="@layout/item_download" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/download_info_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/download_info_include_layout"
+        android:paddingTop="5dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/download_info_detail_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/download_info_include_layout"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/download_info_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/fb_dark_bg" />
+
+        <RelativeLayout
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/download_info_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/san_francisco_medium"
+                android:paddingLeft="11dp"
+                android:singleLine="true"
+                android:text="@string/item_download_info_download_finish"
+                android:textColor="@color/item_download_color_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/download_info_file_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/download_info_title_tv"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/san_francisco_regular"
+                android:paddingLeft="11dp"
+                android:singleLine="true"
+                android:text="@string/item_download_info_download_file"
+                android:textColor="@color/item_download_color_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/download_info_file_data_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/download_info_title_tv"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/download_info_file_tv"
+                android:ellipsize="end"
+                android:fontFamily="@font/san_francisco_medium"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/item_download_color_text"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/download_info_size_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/download_info_file_tv"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/san_francisco_regular"
+                android:paddingLeft="11dp"
+                android:singleLine="true"
+                android:text="@string/item_download_info_download_size"
+                android:textColor="@color/item_download_color_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/download_info_size_data_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/download_info_file_tv"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/download_info_size_tv"
+                android:ellipsize="end"
+                android:fontFamily="@font/san_francisco_medium"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/item_download_color_text"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

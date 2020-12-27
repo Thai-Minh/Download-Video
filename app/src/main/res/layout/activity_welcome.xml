@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_activity_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/agree_app_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/welcome_name_app_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/agree_app_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/san_francisco_bold"
+        android:text="My App"
+        android:textColor="@color/welcome_tittle_app_color"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/agree_privacy_policy_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/agree_version_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/welcome_tittle_app_color"
+        android:textColorLink="@color/welcome_tittle_app_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/agree_version_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/welcome_version"
+        android:textColor="@color/welcome_tittle_app_color"
+        android:textColorLink="@color/welcome_tittle_app_color"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/agree_start_iv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@id/agree_privacy_policy_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_orange_selector"
+        android:fontFamily="@font/san_francisco_bold"
+        android:text="@string/welcome_start"
+        android:textColor="@color/welcome_button_start_color"
+        android:textSize="16sp" />
+
+</RelativeLayout>

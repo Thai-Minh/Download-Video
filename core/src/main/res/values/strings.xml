@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">core</string>
+
+    <string name="bottom_sheet_duration">Duration: </string>
+    <string name="bottom_sheet_finish_title">Video has been downloaded!</string>
+    <string name="item_bottom_sheet_download_file">File:</string>
+    <string name="item_bottom_sheet_download_size">Size:</string>
+    <string name="item_link_quality_list">DOWNLOAD VIDEO</string>
+
+    <string name="item_bottom_sheet_size">%.2f MB</string>
+
+    <string name="dialog_title_rate">Are you satisfied with this application?</string>
+    <string name="dialog_rubbish_rate">Rubbish</string>
+    <string name="dialog_bad_rate">Bad</string>
+    <string name="dialog_okay_rate">Okay</string>
+    <string name="dialog_good_rate">Good</string>
+    <string name="dialog_great_rate">Great</string>
+
+    <string name="dialog_btn_rating_now">RATING NOW</string>
+    <string name="dialog_btn_no_rating">NO</string>
+
+    <string name="share_app_title">Share App</string>
+</resources>

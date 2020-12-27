@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MyCardView">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardPreventCornerOverlap">false</item>
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/san_francisco_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ThemeScroll" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+
+    <style name="ThemeSeekbar" parent="Widget.AppCompat.SeekBar">
+        <item name="colorAccent">@color/color_smooth_seekbar</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:thumb">@null</item>
+    </style>
+
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dailymotion Downloader</string>
+
+    <string name="daily_tutorial_title">How to Download Video</string>
+    <string name="daily_tutorial_open_tw">Open Dailymotion with Explorer</string>
+    <string name="daily_tutorial_select_address_bar_tw">Select Address Bar</string>
+    <string name="daily_tutorial_copy_link">Select Copy</string>
+    <string name="daily_tutorial_open_tw_download">Open Dailymotion Downloader</string>
+    <string name="daily_tutorial_done">Done! The download will be start automatically</string>
+    <string name="daily_browser_title">Dailymotion</string>
+    <string name="daily_item_download_duration">Duration: </string>
+    <string name="daily_tutorial_open_daily">Open Dailymontion</string>
+
+    <string name="progress_dialog_title">Please wait...</string>
+</resources>

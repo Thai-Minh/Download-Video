@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#0E0E14"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="276dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_sheet"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bottom_sheet_thumbnail_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="102dp"
+                android:layout_height="128dp">
+
+                <ImageView
+                    android:id="@+id/bottom_sheet_thumbnail_imv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginTop="46dp"
+                    android:src="@drawable/core_bottom_sheet_play_imv" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/bottom_sheet_cancel_imv"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/core_close_img"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/bottom_sheet_title_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="13dp"
+                android:layout_toLeftOf="@+id/bottom_sheet_cancel_imv"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/san_francisco_bold"
+                android:maxLines="2"
+                android:minLines="1"
+                android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/bottom_sheet_info_duration_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bottom_sheet_title_txt"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bottom_sheet_duration"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/bottom_sheet_duration_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:text="15 s"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_sheet_viewgroup_progress_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bottom_sheet_info_duration_ll"
+                android:layout_marginLeft="13dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.tapi.download.video.core.view.DownLoadProgressbar
+                        android:id="@+id/bottom_sheet_progress_pb"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/bottom_sheet_action_download_img"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:scaleType="center"
+                        android:background="@drawable/core_bg_item_download_black_imv"
+                        android:src="@drawable/core_bottom_sheet_download_while_imv" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/bottom_sheet_progress_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/san_francisco_medium"
+                    android:text="0%..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bottom_sheet_video_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottom_sheet_thumbnail_cv"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_sheet_downloaded_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottom_sheet_thumbnail_cv"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/bottom_sheet_info_title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bottom_sheet_finish_title"
+            android:textColor="@color/dialog_rate_color_text"
+            android:textSize="16sp"
+            android:fontFamily="@font/san_francisco_medium"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/bottom_sheet_file_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/bottom_sheet_info_title_txt"
+            android:ellipsize="end"
+            android:fontFamily="@font/san_francisco_regular"
+            android:paddingLeft="16dp"
+            android:singleLine="true"
+            android:text="@string/item_bottom_sheet_download_file"
+            android:textColor="@color/dialog_rate_color_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_file_data_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottom_sheet_info_title_txt"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/bottom_sheet_file_txt"
+            android:ellipsize="end"
+            android:fontFamily="@font/san_francisco_medium"
+            android:paddingLeft="5dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:textColor="@color/dialog_rate_color_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_size_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottom_sheet_file_txt"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/san_francisco_regular"
+            android:paddingLeft="16dp"
+            android:singleLine="true"
+            android:text="@string/item_bottom_sheet_download_size"
+            android:textColor="@color/dialog_rate_color_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_size_data_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottom_sheet_file_txt"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/bottom_sheet_size_txt"
+            android:ellipsize="end"
+            android:fontFamily="@font/san_francisco_medium"
+            android:paddingLeft="5dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:textColor="@color/dialog_rate_color_text"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_viewgroup_finish_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottom_sheet_thumbnail_cv"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="27dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/core_bottom_sheet_tick_yellow_imv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="@string/bottom_sheet_finish_title"
+            android:textColor="#FFCB2E"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

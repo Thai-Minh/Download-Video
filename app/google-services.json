@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "538801190633",
+    "firebase_url": "https://twitter-video-f0cef.firebaseio.com",
+    "project_id": "twitter-video-f0cef",
+    "storage_bucket": "twitter-video-f0cef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538801190633:android:2b995a3018b7aa5123a278",
+        "android_client_info": {
+          "package_name": "com.downloader.twittervideo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538801190633-adrd1g0hstc1nn5a6dc109ruiv1dtjep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.downloader.twittervideo",
+            "certificate_hash": "eac184ae13f6000e53365e3e9010d459d0a5215c"
+          }
+        },
+        {
+          "client_id": "538801190633-kcl1v2osc6s60sbudnmfakfpts23brof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs1FSWYCb75XHuUlHjrfWTki04uha1DNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538801190633-kcl1v2osc6s60sbudnmfakfpts23brof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

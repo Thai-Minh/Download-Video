@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeProgressBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/fb_preview_seekbar_color</item>
+    </style>
+</resources>

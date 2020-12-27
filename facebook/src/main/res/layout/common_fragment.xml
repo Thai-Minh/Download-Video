@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/common_fragment_demo_image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.tapi.download.video.core.view.PlayControllerView
+        android:id="@+id/common_fragment_demo_controller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+    <RelativeLayout
+        android:id="@+id/common_fragment_demo_loading_view_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#060606"
+        android:visibility="visible">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/common_fragment_demo_group_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/common_fragment_demo_bg_view"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:alpha="0.5"
+            android:background="@drawable/gradien_header_fb_bg" />
+
+        <LinearLayout
+            android:id="@+id/common_fragment_demo_group_title_ll"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:orientation="vertical">
+
+            <com.tapi.download.video.facebook.function.utils.FBStoriesHeaderView
+                android:id="@+id/common_fragment_demo_header_stories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    android:id="@+id/common_fragment_demo_close_iv"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:scaleType="center"
+                    android:src="@drawable/fragment_preview_close_iv"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/common_fragment_demo_close_iv"
+                    android:paddingLeft="16dp">
+
+                    <com.tapi.download.video.core.view.CircleImageView
+                        android:id="@+id/common_fragment_demo_profile_iv"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_centerVertical="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/common_fragment_demo_profile_iv"
+                        android:orientation="vertical"
+                        android:paddingLeft="9dp">
+
+                        <TextView
+                            android:id="@+id/common_fragment_demo_name_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/san_francisco_semibold"
+                            android:singleLine="true"
+                            android:text="aaaaaa"
+                            android:textColor="@color/fb_preview_text_color"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/common_fragment_demo_time_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/san_francisco_regular"
+                            android:singleLine="true"
+                            android:text="aaaa"
+                            android:textColor="@color/fb_preview_text_color"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/common_fragment_demo_loading_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#060606"
+        android:visibility="visible">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+    </RelativeLayout>
+</RelativeLayout>

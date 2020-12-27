@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_bg"
+    android:orientation="vertical"
+    android:id="@+id/popup_group_layout_ll"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/popup_share_app_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="2dp"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/san_francisco_medium"
+            android:gravity="center_vertical"
+            android:paddingLeft="13dp"
+            android:text="@string/popup_share_app"
+            android:textColor="@color/popup_color_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/popup_update_app_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="2dp"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/san_francisco_medium"
+            android:gravity="center_vertical"
+            android:paddingLeft="13dp"
+            android:text="@string/popup_update_app"
+            android:textColor="@color/popup_color_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/popup_private_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="2dp"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/san_francisco_medium"
+            android:gravity="center_vertical"
+            android:paddingLeft="13dp"
+            android:text="@string/popup_privacy_policy"
+            android:textColor="@color/popup_color_text"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toLeftOf="@id/popup_dark_mode_sw"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/san_francisco_medium"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="@string/popup_dark_mode"
+                android:textColor="@color/popup_color_text"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/popup_dark_mode_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:theme="@style/ThemeSwitch" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/popup_rate_app_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/san_francisco_medium"
+            android:gravity="center_vertical"
+            android:paddingLeft="13dp"
+            android:text="@string/popup_rate_app"
+            android:textColor="@color/popup_color_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

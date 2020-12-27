@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.tapi.download.video.instagram.function.preview.StoriesViewPager
+        android:id="@+id/activity_preview_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:alpha="0.5" />
+
+        <LinearLayout
+            android:id="@+id/activity_preview_group_title_ll"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:orientation="vertical">
+
+            <com.tapi.download.video.instagram.function.util.InstaStoriesHeaderView
+                android:id="@+id/activity_preview_header_stories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    android:id="@+id/activity_preview_close_imv"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:scaleType="center" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/preview_activity_play_controller_download_rl"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/new_feed_download_selector"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/new_feed_download_iv" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_preview_viewpager_loading_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/insta_viewpager_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_preview_loading_bottom_sheet_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/colorBlackAlpha"
+        android:visibility="gone">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            app:indicatorName="BallFulseIndicator" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

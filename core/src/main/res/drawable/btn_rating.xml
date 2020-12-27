@@ -1,0 +1,17 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/item_video_list_enable"/>
+            <corners
+                android:radius="5dp"/>
+        </shape>
+    </item>
+
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/dialog_rate_color_bg"/>
+            <corners
+                android:radius="5dp"/>
+        </shape>
+    </item>
+</selector>

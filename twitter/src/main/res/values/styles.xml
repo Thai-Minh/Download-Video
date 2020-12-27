@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="WindowsAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="ThemeScroll" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+
+    <style name="ThemeProgressBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/twitter_preview_seekbar_color</item>
+    </style>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="DayTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorSwitchThumbNormal">#000000</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">#ffffff</item>
+        <item name="cardGround">#ffffff</item>
+        <item name="textColor">#808080</item>
+        <item name="tintColor">#000000</item>
+        <item name="buttonColor">#2196F3</item>
+        <item name="android:windowAnimationStyle">@style/WindowsAnimationTransition</item>
+        <item name="colorControlNormal">#1976D2</item>
+        <item name="colorControlActivated">#1976D2</item>
+        <item name="colorControlHighlight">#1976D2</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="ThemeSwitch" parent="Theme.AppCompat.Light">
+
+        <item name="colorControlActivated">#FFCB2E</item>
+        <item name="colorSwitchThumbNormal">#9D9D9D</item>
+        <item name="android:colorForeground">#9D9D9D</item>
+    </style>
+</resources>

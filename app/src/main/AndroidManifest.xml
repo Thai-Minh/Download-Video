@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tapi.downloadsocialvideo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:autoRemoveFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.PlayVideoActivity" />
+        <activity android:name="com.tapi.download.video.facebook.function.preview.ui.PreviewActivity" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.tapi.download.video.instagram.function.preview.ui.PreviewStoriesActivity" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cfc4e00ce39a10201e4491f1950f9d978f7b66b5" />
+
+        <service
+            android:name="com.tapi.download.video.twitter.service.ClipBoardTwitterService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.tapi.downloadsocialvideo.START_SERVICE_TW" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.DownloadService"
+            android:stopWithTask="false" />
+    </application>
+
+</manifest>

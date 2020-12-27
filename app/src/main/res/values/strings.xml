@@ -1,0 +1,92 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">DownloadSocialVideo</string>
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_browser">Browser</string>
+    <string name="bottom_nav_download">Downloads</string>
+    <string name="bottom_nav_market">Market AD</string>
+    <string name="fb_home_paste_link">PASTE LINK</string>
+    <string name="fb_home_download_link">DOWNLOAD</string>
+
+    <!--item download-->
+    <string name="item_download_info_quality">DOWNLOAD VIDEO %s</string>
+    <string name="item_download_info_size">%.2f MB</string>
+    <string name="item_download_info_download_finish">Video has been downloaded!</string>
+    <string name="item_download_info_download_file">File:</string>
+    <string name="item_download_info_download_size">Size:</string>
+    <string name="item_download_info_live_video">Sorry, we do not support with live video</string>
+    <string name="item_download_watch">WATCH VIDEO</string>
+    <string name="item_download_header_end">Downloaded</string>
+    <string name="item_download_header_downloading">Downloading</string>
+
+
+    <string name="welcome_agree_text">Agree to the %s and %s</string>
+    <string name="welcome_privacy_policy">Privacy Policy</string>
+    <string name="welcome_terms_and_service">Terms of Service</string>
+    <string name="welcome_need_permission">We need to grant permissions to continue using the function</string>
+    <string name="dialog_permission">Please grant permission in setting</string>
+    <string name="confirm_dialog_ok">OK</string>
+    <string name="confirm_dialog_cancel">CANCEL</string>
+
+    <string name="welcome_start">START</string>
+    <string name="welcome_version">Version %s</string>
+
+    <string name="welcome_facebook_app">Facebook Downloader</string>
+    <string name="welcome_instagram_app">Intagram Downloader</string>
+    <string name="welcome_twitter_app">Twitter Downloader</string>
+    <string name="welcome_dailymotion_app">Dailymotion Downloader</string>
+
+    <string name="fragment_download_no_dl">No Download</string>
+
+    <string name="main_title_facebook">Facebook</string>
+    <string name="main_title_insta">Instagram</string>
+    <string name="main_title_daily">Dailymotion</string>
+    <string name="main_title_twiter">Twitter</string>
+
+    <!--dialog delete-->
+    <string name="dialog_delete_title">Do you want to delete this video?</string>
+    <string name="dialog_delete_cancel" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="dialog_delete_ok">OK</string>
+
+    <string name="daily_item_download_duration">Duration: </string>
+    <plurals name="number_download">
+        <item quantity="one">Downloading: %d file</item>
+        <item quantity="other">Downloading: %d files</item>
+    </plurals>
+    <string name="tweet_url">Tweet Url</string>
+    <string name="download_video">Download Video/Gif</string>
+    <string name="start_webview">Start Webview</string>
+    <string name="about_twittersave">About TwitterVideo</string>
+    <string name="about">TwitterVideo helps you to download Videos and animated Gifs from Tweets to your device.</string>
+    <string name="paste">Paste Link</string>
+    <string name="toast_url">Enter correct URL</string>
+
+    <string name="btn_instagram">Instagram</string>
+    <string name="btn_twitter">Twitter</string>
+    <string name="btn_daily">Daily</string>
+    <string name="instagram_url">Instagram URL</string>
+
+    <string name="app_id">3043772035662043</string>
+    <string name="redirect_url">https://httpstat.us/200</string>
+    <string name="base_url">https://api.instagram.com/</string>
+    <string name="get_user_info_url">https://api.instagram.com/v1/users/self/?access_token=</string>
+
+    <string name="insta_home_frag_paste_link">PASTE LINK</string>
+    <string name="insta_home_frag_download_link">DOWNLOAD</string>
+    <string name="insta_home_frag_open_insta">DOWNLOAD</string>
+
+    <!--popup-->
+    <string name="popup_share_app">Share App</string>
+    <string name="popup_update_app">Update app</string>
+    <string name="popup_privacy_policy">Privacy Policy</string>
+    <string name="popup_dark_mode">Dark mode</string>
+    <string name="popup_rate_app">Rate App</string>
+
+    <!--home fragment-->
+    <string name="fb_home_no_empty_link">Please do not leave the link blank</string>
+    <string name="fb_home_correct_link">Please enter the correct video link</string>
+    <string name="fb_home_check_internet">Please check the internet again</string>
+    <string name="main_browser_no_internet">No Internet</string>
+    <string name="main_browser_try_again">Try Again</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

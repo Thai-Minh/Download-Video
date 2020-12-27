@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorBlackAlpha">#CC000000</color>
+    
+    <color name="fb_tutorial_text_color">#FFFFFF</color>
+    <color name="fb_browser_tab_text_color">#FFFFFF</color>
+    <color name="fb_browser_tab_select_color">#FFCB2E</color>
+    <color name="fb_preview_text_color">#FFFFFF</color>
+    <color name="fb_preview_seekbar_color">#FFCB2E</color>
+    <color name="fb_preview_seekbar_text_color">#93A8B3</color>
+    <color name="fb_preview_seekbar_line">#93A8B3</color>
+    <color name="fb_dark_bg">#060606</color>
+    <color name="fb_common_play_bt_bg">#80FFFFFF</color>
+    <color name="item_download_bg">#1A1A1F</color>
+    <color name="color_smooth_seekbar">#FFCB2E</color>
+    <color name="color_tutorial_bg">#1A1A1F</color>
+    <color name="color_start_gradient_header_bg">#CC000000</color>
+    <color name="color_end_gradient_header_bg">#00000000</color>
+    <color name="color_end_gradient_download_bg">#FFB55F</color>
+    <color name="color_start_gradient_download_bg">#FFCB2E</color>
+    <color name="color_start_gradient_download_select_bg">#D6FFCB2E</color>
+    <color name="color_end_gradient_download_select_bg">#D6FFB55F</color>
+    <color name="story_fragment_empty_text_color">#FFFFFF</color>
+
+    <color name="colorBackgroundItemClicked">#292828</color>
+</resources>

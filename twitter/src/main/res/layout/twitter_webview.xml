@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tapi.download.video.twitter.webview.NestedWebView
+        android:id="@+id/twitter_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:isScrollContainer="false"
+        android:visibility="visible"/>
+
+</RelativeLayout>

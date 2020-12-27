@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FAB735</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorNavWhite">#FFFFFF</color>
+
+    <color name="fb_tutorial_text_color">#FFFFFF</color>
+    <color name="fb_title_color_bg">#161616</color>
+
+    <!--popup-->
+    <color name="popup_color_bg">#363637</color>
+    <color name="popup_color_text">#FFFFFF</color>
+
+    <!--welcome-->
+    <color name="welcome_tittle_app_color">#FFFFFF</color>
+    <color name="welcome_button_start_color">#373737</color>
+
+    <!--main-->
+    <color name="fb_main_color_bg">#060606</color>
+    <color name="fb_main_color_text_no_internet">#FFFFFF</color>
+    <color name="fb_main_color_button_normal">#FFCB2E</color>
+    <color name="fb_main_color_button_press">#94761B</color>
+    <color name="fb_main_color_button_text">#222222</color>
+
+    <!--home fragment-->
+    <color name="home_fragment_bg_group_link">#1A1A1F</color>
+    <color name="home_fragment_color_edt_bg">#FFFFFF</color>
+    <color name="home_fragment_color_paste_bg_bt">#2F80ED</color>
+    <color name="home_fragment_color_paste_bg_bt_select">#D52F80ED</color>
+    <color name="home_fragment_color_download_bg_bt">#F2994A</color>
+    <color name="home_fragment_color_download_bg_bt_select">#D6F2994A</color>
+
+    <!--donwload info-->
+    <color name="download_info_color_bg">#1A1A1F</color>
+    <color name="download_info_item_stroke_bg">#FFFFFF</color>
+    <color name="download_info_item_color_text">#FFFFFF</color>
+
+    <!--fragment download-->
+    <color name="fragment_download_no_download">#FFFFFF</color>
+    <!--dialog delete -->
+    <color name="dialog_delete_text_color">#FFFFFF</color>
+    <color name="dialog_delete_cancel_color">#B7BBC0</color>
+    <color name="dialog_delete_ok_color">#FFCB2E</color>
+
+    <!--item download-->
+    <color name="item_download_color_text">#FFFFFF</color>
+
+</resources>

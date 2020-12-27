@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ds">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="cardGround" format="color"/>
+        <attr name="textColor" format="color"/>
+        <attr name="tintColor" format="color"/>
+        <attr name="buttonColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="InstaStoriesHeaderView">
+        <attr name="size" format="integer" />
+        <attr name="colorBackGround" format="color" />
+        <attr name="colorSelect" format="color" />
+        <attr name="tabHeight" format="dimension" />
+        <attr name="tabSelect" format="integer" />
+        <attr name="paddingRow" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="DownLoadProgressbar">
+        <attr name="progressHeight" format="dimension" />
+        <attr name="progressHeightBound" format="dimension" />
+        <attr name="progressValue" format="integer" />
+    </declare-styleable>
+</resources>

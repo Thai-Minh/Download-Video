@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    
+    <color name="fb_tutorial_text_color">#FFFFFF</color>
+    <color name="fb_browser_tab_text_color">#FFFFFF</color>
+    <color name="fb_browser_tab_select_color">#FFCB2E</color>
+    <color name="fb_preview_text_color">#FFFFFF</color>
+    <color name="fb_preview_seekbar_color">#FFCB2E</color>
+    <color name="fb_preview_seekbar_text_color">#93A8B3</color>
+    <color name="fb_preview_seekbar_line">#93A8B3</color>
+    <color name="fb_dark_bg">#161616</color>
+    <color name="fb_common_play_bt_bg">#80FFFFFF</color>
+
+    <!--dialog rate-->
+    <color name="dialog_rate_color_text">#FFFFFF</color>
+    <color name="dialog_rate_color_text_press">#FFFFFF</color>
+    <color name="dialog_rate_color_text_normal">#B7BBC0</color>
+    <color name="dialog_rate_color_bg">#1A1A1F</color>
+
+    <color name="item_video_list_press">#AE8303</color>
+    <color name="item_video_list_enable">#FFCB2E</color>
+
+    <color name="color_smooth_seekbar1">#FFCB2E</color>
+<!--    <color name="sky_blue">#FFCB2E</color>-->
+<!--    <color name="sky_blue_light">#FFCB2E</color>-->
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_newfeed_group_cons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tapi.download.video.instagram.core.webview.InstagramWebview
+        android:id="@+id/fragment_newfeed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_newfeed_group_cons"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_newfeed_group_cons"
+        app:layout_constraintRight_toRightOf="@+id/fragment_newfeed_group_cons"
+        app:layout_constraintTop_toTopOf="@+id/fragment_newfeed_group_cons">
+
+    </com.tapi.download.video.instagram.core.webview.InstagramWebview>
+
+    <RelativeLayout
+        android:id="@+id/fragment_newfeed_loading_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/colorBlack"
+        android:visibility="gone">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/fragment_stories_spin_kit"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

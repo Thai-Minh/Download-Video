@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/twitter_tutorial_group_all_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/twitter_group_paste_link_bg"
+        android:paddingLeft="21dp"
+        android:paddingTop="27dp"
+        android:paddingBottom="22dp">
+
+        <TextView
+            android:id="@+id/twitter_tutorial_title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/san_francisco_bold"
+            android:text="@string/twitter_tutorial_title"
+            android:textColor="@color/twitter_tutorial_text_color"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:id="@+id/twitter_tutorial_group_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/twitter_tutorial_title_txt"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/twitter_tutorial_dot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/san_francisco_medium"
+                    android:text="@string/twitter_tutorial_open_tw"
+                    android:textColor="@color/twitter_tutorial_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/twitter_tutorial_dot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/san_francisco_medium"
+                    android:text="@string/twitter_tutorial_copy_link"
+                    android:textColor="@color/twitter_tutorial_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/twitter_image_tutorial" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/twitter_tutorial_dot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/san_francisco_medium"
+                    android:text="@string/twitter_tutorial_open_tw_download"
+                    android:textColor="@color/twitter_tutorial_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/twitter_image_paste_tutorial" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/twitter_tutorial_done_iv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/san_francisco_medium"
+                    android:paddingRight="44dp"
+                    android:text="@string/twitter_tutorial_done"
+                    android:textColor="@color/twitter_tutorial_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/twitter_tutorial_state_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="11dp"
+        android:src="@drawable/twitter_tutorial_info_iv" />
+
+    <TextView
+        android:id="@+id/twitter_tutorial_open_tw_txt"
+        android:layout_width="143dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/twitter_tutorial_group_all_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_paste_link_selector"
+        android:fontFamily="@font/san_francisco_bold"
+        android:gravity="center"
+        android:text="@string/twitter_tutorial_open_tw"
+        android:textColor="@color/twitter_tutorial_text_open_twitter_color"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

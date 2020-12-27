@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="tablayout_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/san_francisco_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ThemeScroll" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+
+    <style name="ThemeProgressBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/insta_preview_seekbar_color</item>
+    </style>
+
+</resources>

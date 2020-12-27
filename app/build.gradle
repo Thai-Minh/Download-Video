@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.tapi.downloadsocialvideo"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation project(':dailymotion')
+    implementation project(path:':core')
+    implementation project(path: ':downloader')
+    implementation project(path: ':facebook')
+    implementation project(path: ':twitter')
+    implementation project(path: ':instagram')
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test:rules:1.1.1'
+    implementation 'androidx.annotation:annotation:1.0.0'
+    testImplementation 'org.mockito:mockito-core:2.28.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'com.github.bachors:Android-Prefix-Input:1.1'
+
+    //ffmpeg
+    implementation 'com.arthenica:mobile-ffmpeg-full:4.4'
+
+    //Twitter kit library
+    implementation('com.twitter.sdk.android:twitter:3.3.0@aar') {
+        transitive = true
+    }
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.7'
+    implementation 'it.grabz.grabzit:grabzit:3.3.0'
+
+    implementation 'com.android.support:multidex:1.0.1'
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'org.jsoup:jsoup:1.13.1'
+
+    implementation 'org.mp4parser:isoparser:1.9.41'
+    implementation 'org.mp4parser:muxer:1.9.41'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+    implementation 'com.wang.avi:library:2.1.3'
+}

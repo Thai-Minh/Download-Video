@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">facebook</string>
+    <string name="facebook_tutorial_title">How to Download Video</string>
+    <string name="facebook_tutorial_open_fb">Open Facebook.</string>
+    <string name="facebook_tutorial_copy_link">Select “Copy Link”</string>
+    <string name="facebook_tutorial_open_fb_download">Open Facebook Downloader</string>
+    <string name="facebook_tutorial_done">Done! The download will be start automatically</string>
+    <string name="facebook_browser_new_feed">News Feed</string>
+    <string name="facebook_browser_story">Story</string>
+    <string name="facebook_browser_title">Facebook</string>
+    <string name="facebook_no_stories">No Stories</string>
+    <string name="fb_home_open_fb">Open Facebook</string>
+    <string name="fb_tutorial_app_not_installed">Sorry, the facebook application is not installed</string>
+    <string name="story_fragment_empty">Empty Story</string>
+
+</resources>

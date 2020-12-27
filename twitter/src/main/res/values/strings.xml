@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Twitter - Instagram Downloader</string>
+
+    <plurals name="number_download">
+        <item quantity="one">Downloading: %d file</item>
+        <item quantity="other">Downloading: %d files</item>
+    </plurals>
+
+    <string name="tweet_url">Tweet Url</string>
+    <string name="download_video">Download Video/Gif</string>
+    <string name="about_twittersave">About TwitterVideo</string>
+    <string name="about">TwitterVideo helps you to download Videos and animated Gifs from Tweets to your device.</string>
+    <string name="paste">Paste Link</string>
+    <string name="toast_url">Enter correct URL</string>
+
+    <string name="app_id">3043772035662043</string>
+    <string name="redirect_url">https://httpstat.us/200</string>
+    <string name="base_url">https://api.instagram.com/</string>
+    <string name="get_user_info_url">https://api.instagram.com/v1/users/self/?access_token=</string>
+
+    <string name="twitter_tutorial_title">How to Download Video</string>
+    <string name="twitter_tutorial_open_tw">Open Twitter</string>
+    <string name="twitter_tutorial_copy_link">Select “Copy”</string>
+    <string name="twitter_tutorial_open_tw_download">Open Twitter Downloader</string>
+    <string name="twitter_tutorial_done">Done! The download will be start automatically</string>
+    <string name="twitter_browser_new_feed">News Feed</string>
+    <string name="twitter_browser_story">Story</string>
+    <string name="twitter_browser_title">Twitter</string>
+
+    <string name="twitter_item_download_duration">Duration: </string>
+
+    <string name="twitter_home_no_empty_link">Please do not leave the link blank</string>
+    <string name="progress_dialog_title">Please wait...</string>
+</resources>

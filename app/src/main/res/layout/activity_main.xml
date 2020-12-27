@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fb_main_color_bg"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:background="@color/home_fragment_bg_group_link"
+        android:fitsSystemWindows="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/main_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/main_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/san_francisco_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/facebook_browser_title"
+            android:textColor="@color/fb_tutorial_text_color"
+            android:textSize="34sp" />
+
+        <ImageView
+            android:scaleType="center"
+            android:src="@drawable/main_more_ic"
+            android:id="@+id/main_more_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackground" />
+    </RelativeLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom_navigation"
+        android:layout_below="@+id/main_title_rl" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/nav_color_selector"
+        app:itemTextColor="@color/nav_color_selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navigation_menu" />
+
+    <include
+        android:id="@+id/main_layout_include"
+        layout="@layout/layout_no_internet_connection_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom_navigation"
+        android:layout_below="@+id/main_title_rl">
+
+    </include>
+
+</RelativeLayout>

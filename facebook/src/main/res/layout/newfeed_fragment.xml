@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_newfeed_group_all_cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.tapi.download.video.facebook.function.utils.FaceBookWebView
+        android:id="@+id/fragment_newfeed_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.tapi.download.video.core.view.RoundedHorizontalProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/fragment_newfeed_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        app:backgroundColor="@android:color/transparent"
+        app:isRounded="false"
+        android:progress="34"
+        app:progressColor="@color/color_smooth_seekbar1" />
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:focusable="false"
+        android:clickable="false"
+        android:id="@+id/fragment_newfeed_loading_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#060606"
+        android:visibility="gone">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

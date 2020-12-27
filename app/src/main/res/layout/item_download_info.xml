@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_download_info_group_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingLeft="11dp"
+    android:paddingTop="5dp"
+    android:paddingRight="11dp"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/item_download_info_bg"
+        android:paddingLeft="17dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/item_download_info_iv"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp">
+
+            <TextView
+                android:id="@+id/item_download_info_quality_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/san_francisco_bold"
+                android:singleLine="true"
+                android:text="aaaaaaaaaa"
+                android:textColor="@color/download_info_item_color_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_download_info_size_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_download_info_quality_tv"
+                android:ellipsize="end"
+                android:fontFamily="@font/san_francisco_regular"
+                android:singleLine="true"
+                android:text="aaaaaaaaaa"
+                android:textColor="@color/download_info_item_color_text"
+                android:textSize="12sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_download_info_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/item_download_info_ic" />
+    </RelativeLayout>
+
+</RelativeLayout>

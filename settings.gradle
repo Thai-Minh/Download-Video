@@ -1,0 +1,2 @@
+include ':app', ':facebook', ':dailymotion', ':instagram', ':twitter', ':core', ':downloader'
+rootProject.name='DownloadSocialVideo'

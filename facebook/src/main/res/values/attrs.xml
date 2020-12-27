@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DownLoadProgressbar">
+        <attr name="progressHeight" format="dimension" />
+        <attr name="progressHeightBound" format="dimension" />
+        <attr name="progressValue" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="FBStoriesHeaderView">
+        <attr name="size" format="integer" />
+        <attr name="colorBackGround" format="color" />
+        <attr name="colorSelect" format="color" />
+        <attr name="tabHeight" format="dimension" />
+        <attr name="tabSelect" format="integer" />
+        <attr name="paddingRow" format="dimension" />
+    </declare-styleable>
+</resources>
