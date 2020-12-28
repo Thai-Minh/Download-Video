@@ -7,6 +7,7 @@ import com.tapi.download.video.core.DownloadLink;
 import com.tapi.download.video.core.Video;
 import com.tapi.download.video.core.listener.ICatch;
 import com.tapi.download.video.core.listener.OnCatchVideoListener;
+import com.tapi.download.video.twitter.task.youtube.GetLinkVideoYoutube;
 import com.tapi.download.video.twitter.utils.Utils;
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
@@ -37,7 +38,7 @@ public class TwitterCatchVideo implements ICatch {
         if (viewLink.contains("https://twitter.com")) {
             new getLinkVideoTwitter(onCatchVideoListener).execute(viewLink);
         } else if (viewLink.contains("https://youtu.be/") ||viewLink.contains("https://www.youtube.com/watch?v=")) {
-            new getLinkVideoYoutube(onCatchVideoListener).execute(viewLink);
+            new GetLinkVideoYoutube(onCatchVideoListener).execute(viewLink);
         }
     }
 
@@ -207,36 +208,4 @@ public class TwitterCatchVideo implements ICatch {
         }
     }
 
-    private class getLinkVideoYoutube extends AsyncTask<String, Void, Video> {
-        private OnCatchVideoListener listener;
-        private String link;
-
-        public getLinkVideoYoutube(OnCatchVideoListener listener) {
-            this.listener = listener;
-        }
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            if (listener != null)
-                listener.onStartCatch();
-        }
-
-        @Override
-        protected Video doInBackground(String... strings) {
-            link = strings[0];
-
-            return new Video();
-        }
-
-        @Override
-        protected void onPostExecute(Video video) {
-            super.onPostExecute(video);
-            if (listener != null) {
-                if (video != null)
-                    listener.onCatchedLink(video);
-                else listener.onPrivateLink(link);
-            }
-        }
-    }
 }

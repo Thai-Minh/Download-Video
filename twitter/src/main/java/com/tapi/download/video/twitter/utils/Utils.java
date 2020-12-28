@@ -20,6 +20,8 @@ import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.security.ProviderInstaller;
 import com.tapi.download.video.core.DownloadLink;
 import com.tapi.download.video.core.Video;
+import com.tapi.download.video.twitter.task.TwitterCatchVideo;
+import com.tapi.download.video.twitter.task.youtube.SOService;
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
 import com.twitter.sdk.android.core.TwitterApiClient;
@@ -40,12 +42,30 @@ import java.util.TimeZone;
 import javax.net.ssl.SSLContext;
 
 import retrofit2.Call;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Utils {
 
     private static final String TAG = "Utils";
 
     public static final String TWITTER_URL = "https://twitter.com/";
+
+    public static final String BASE_URL = "http://192.168.0.186:5000/";
+
+    public static SOService getSOService() {
+        return getClient(BASE_URL).create(SOService.class);
+    }
+    private static Retrofit retrofit = null;
+    public static Retrofit getClient(String baseUrl) {
+        if (retrofit == null) {
+            retrofit = new Retrofit.Builder()
+                    .baseUrl(baseUrl)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+        }
+        return retrofit;
+    }
 
     public static void initializeSSLContext(Context mContext){
         try {
