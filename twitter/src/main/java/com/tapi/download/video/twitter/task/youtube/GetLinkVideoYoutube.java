@@ -37,7 +37,7 @@ public class GetLinkVideoYoutube extends AsyncTask<String, Void, Video> {
         final long[] duration = new long[1];
 
         isWaitingForGettingVideo = true;
-        mService.getAnswers(url).enqueue(new retrofit2.Callback<String>() {
+        mService.getVideoYoutubeInfo(url).enqueue(new retrofit2.Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
                 try {

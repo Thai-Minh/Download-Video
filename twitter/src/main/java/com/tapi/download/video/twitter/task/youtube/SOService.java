@@ -8,9 +8,9 @@ import retrofit2.http.Query;
 import retrofit2.http.Url;
 
 public interface SOService {
-    @GET("youtube?url=")
-    Call<String> getAnswers();
+    @GET("/instagram?")
+    Call<String> getVideoInstagramInfo(@Query("url") String tags);
 
-    @GET
-    Call<String> getAnswers(@Url String url);
+    @GET("/youtube?")
+    Call<String> getVideoYoutubeInfo(@Query("url") String tags);
 }
