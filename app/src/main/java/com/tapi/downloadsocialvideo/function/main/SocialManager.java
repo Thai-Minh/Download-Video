@@ -23,7 +23,7 @@ import com.tapi.download.video.twitter.ui.home.TwitterTutorial;
 import com.tapi.downloadsocialvideo.R;
 
 public class SocialManager implements ISocialNetworkController {
-    private final static StateApp mState = StateApp.TWITTER;
+    private final static StateApp mState = StateApp.INSTAGRAM;
 
     public static SocialManager instance;
 

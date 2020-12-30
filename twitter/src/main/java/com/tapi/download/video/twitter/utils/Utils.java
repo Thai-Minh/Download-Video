@@ -51,7 +51,7 @@ public class Utils {
 
     public static final String TWITTER_URL = "https://twitter.com/";
 
-    public static final String BASE_URL = "http://192.168.0.186:5000/";
+    public static final String BASE_URL = "http://172.20.10.4:5000/";
 
     public static SOService getSOService() {
         return getClient(BASE_URL).create(SOService.class);
